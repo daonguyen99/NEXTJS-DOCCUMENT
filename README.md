@@ -1,3 +1,11 @@
+/**
+ * @author [daoNguyen]
+ * @email [sydaonguyen1999@gmail.com ]
+ * @create date 2022-10-05 14:48:55
+ * @modify date 2022-10-05 14:48:55
+ * @desc [description]
+ */
+
 # NEXTJS-DOCCUMENT
 # Setup deploy NEXTJS trên server Ubuntu 20.x
 ## Các bước cấu hình đầu tiên cho server
@@ -62,23 +70,23 @@
           `$ sudo nginx -t`
     - Xem kết quả về niếu thành công thì restart lại nginx và tiến hành build source.
           `$ sudo systemctl restart nginx`
-          - Mỗi lần chỉnh sửa file cấu hình nginx thì phải restart nginx để nhận cấu hình mới.
+    - Mỗi lần chỉnh sửa file cấu hình nginx thì phải restart nginx để nhận cấu hình mới.
 
 ## Build và start dự án next
  ### Cài pm2 để start dự án:
   - Các bước cài đặt pm2:
          `$ npm install pm2 -g `
-         - Kiểm tra version
+  - Kiểm tra version
           `$ pm2 -v `
  ### Cài đặt Nodejs (NVM)
   - Cài đặt NVM
          `$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash `
-  - Chỉnh sửa tẹp lệnh `~/.bashrc`
+  - Chỉnh sửa tệp lệnh `~/.bashrc`
          `$ nano ~/.bashrc`
-         - Thêm các dòng sau ở cuối file và lưu
-
+  - Thêm các dòng sau ở cuối file và lưu
          export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
   - Lưu file và reload để nhận chỉnh sửa mới:
          `$ source ~/.bashrc`
   - Kiểm tra NVM 
@@ -97,6 +105,6 @@
   - Sau khi đã hoàn thành tất cả các bước trên tiến hành kiểm tra lại bằng địa chỉ IP server hoặc domain(Niếu đã trỏ ) bằng trình duyệt web.
 
 Tham khảo: 
-    - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
-    - https://pm2.io/docs/runtime/guide/installation/
-    - https://www.vultr.com/docs/install-nvm-and-node-js-on-ubuntu-20-04/
+- https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+- https://pm2.io/docs/runtime/guide/installation/
+- https://www.vultr.com/docs/install-nvm-and-node-js-on-ubuntu-20-04/
