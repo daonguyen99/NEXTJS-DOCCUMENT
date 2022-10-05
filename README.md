@@ -45,7 +45,8 @@
     -   Dùng file mặc định của nginx, niếu muốn tạo mới thì tiến hành tạo file mới nằm trong thư mục này và đổi default thành tên file mới đã tạo:
          `$ sudo nano /etc/nginx/sites-available/default`
 
-    -   Dán đoạn code config sau và tiến hành lưu:
+    -   Dán đoạn code config sau và tiến hành lưu
+    
          server {
                 listen 80;
                 server_name `you_domain.com`; 
