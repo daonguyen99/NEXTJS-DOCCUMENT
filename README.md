@@ -46,6 +46,7 @@
          `$ sudo nano /etc/nginx/sites-available/default`
 
     -   Dán đoạn code config sau và tiến hành lưu
+    
          server {
                 listen 80;
                 server_name `you_domain.com`; 
@@ -84,7 +85,7 @@
   - Chỉnh sửa tệp lệnh `~/.bashrc`
          `$ nano ~/.bashrc`
   - Thêm các dòng sau ở cuối file và lưu
-  
+
          export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
