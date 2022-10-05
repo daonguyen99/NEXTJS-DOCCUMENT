@@ -46,14 +46,13 @@
          `$ sudo nano /etc/nginx/sites-available/default`
 
     -   Dán đoạn code config sau và tiến hành lưu
-    
+
          server {
                 listen 80;
                 server_name `you_domain.com`; 
                 index index.html;
                 error_log  /var/log/nginx/hssg-error.log;
                 access_log /var/log/nginx/hssg-access.log;
-                
 
                 proxy_read_timeout 1200;
                 proxy_connect_timeout 1200;
