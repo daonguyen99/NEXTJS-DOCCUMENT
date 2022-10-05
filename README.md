@@ -6,7 +6,7 @@
  * @desc [Tài liệu tham khảo các bước Setup để deploy NEXTJS trên server Ubuntu 20.x ]
  */
 
-# NEXTJS-DOCCUMENT
+
 # Setup deploy NEXTJS trên server Ubuntu 20.x
 ## Các bước cấu hình đầu tiên cho server
  - Nginx hoặc Apache (nên cài Nginx vì tính ứng dụng rộng rãi )
@@ -105,6 +105,15 @@
   - Sau khi build thành công vào thư mục dự án và start
            `$ pm2 start npm --name "name_project" -- start`
   - Sau khi đã hoàn thành tất cả các bước trên tiến hành kiểm tra lại bằng địa chỉ IP server hoặc domain(Niếu đã trỏ ) bằng trình duyệt web.
+
+## Deploy code mới lên server
+ - Vào thư mục dự án
+            `$ git pull`
+            `$ npm run build`
+            `$ pm2 restart all`  
+
+
+
 
 Tham khảo: 
 - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
