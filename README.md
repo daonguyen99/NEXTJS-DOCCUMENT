@@ -54,12 +54,9 @@
                 index index.html;
                 error_log  /var/log/nginx/hssg-error.log;
                 access_log /var/log/nginx/hssg-access.log;
-                
-
                 proxy_read_timeout 1200;
                 proxy_connect_timeout 1200;
                 proxy_send_timeout 1200;
-
                 location / {
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
