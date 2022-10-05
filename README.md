@@ -3,7 +3,7 @@
  * @email [sydaonguyen1999@gmail.com ]
  * @create date 2022-10-05 14:48:55
  * @modify date 2022-10-05 14:48:55
- * @desc [description]
+ * @desc [Tài liệu tham khảo các bước Setup để deploy NEXTJS trên server Ubuntu 20.x ]
  */
 
 # NEXTJS-DOCCUMENT
