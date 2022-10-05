@@ -46,17 +46,18 @@
          `$ sudo nano /etc/nginx/sites-available/default`
 
     -   Dán đoạn code config sau và tiến hành lưu
-
-         server 
-            {
+         server {
                 listen 80;
                 server_name `you_domain.com`; 
                 index index.html;
                 error_log  /var/log/nginx/hssg-error.log;
                 access_log /var/log/nginx/hssg-access.log;
+                
+
                 proxy_read_timeout 1200;
                 proxy_connect_timeout 1200;
                 proxy_send_timeout 1200;
+
                 location / {
                     proxy_set_header Host $host;
                     proxy_set_header X-Real-IP $remote_addr;
@@ -83,6 +84,7 @@
   - Chỉnh sửa tệp lệnh `~/.bashrc`
          `$ nano ~/.bashrc`
   - Thêm các dòng sau ở cuối file và lưu
+  
          export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
