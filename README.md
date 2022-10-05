@@ -110,3 +110,4 @@ Tham khảo:
 - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
 - https://pm2.io/docs/runtime/guide/installation/
 - https://www.vultr.com/docs/install-nvm-and-node-js-on-ubuntu-20-04/
+- https://ebudezain.com/cach-thiet-lap-trien-khai-ung-dung-next.js-tren-nginx-+-pm2-voi-letsencrypt
