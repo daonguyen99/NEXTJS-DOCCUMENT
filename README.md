@@ -65,19 +65,6 @@
                 }
             }
 
-            server {
-                    listen 80;
-                    listen [::]:80;
-
-                    root /var/www/your_domain/html;
-                    index index.html index.htm index.nginx-debian.html;
-
-                    server_name your_domain www.your_domain;
-
-                    location / {
-                            try_files $uri $uri/ =404;
-                    }
-            }
         -   server_name `you_domain.com`;  domain cần chạy website
         -   proxy_pass http://localhost:3000;  port dự án lúc start 
     -   Sau khi config xong tiến hành lưu file và kiểm tra lại
