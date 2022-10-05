@@ -46,8 +46,9 @@
          `$ sudo nano /etc/nginx/sites-available/default`
 
     -   Dán đoạn code config sau và tiến hành lưu
-    
-         server {
+
+         server 
+            {
                 listen 80;
                 server_name `you_domain.com`; 
                 index index.html;
