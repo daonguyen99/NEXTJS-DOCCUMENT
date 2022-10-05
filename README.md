@@ -47,7 +47,7 @@
 
     -   Dán đoạn code config sau và tiến hành lưu
 
-         server {
+            server {
                 listen 80;
                 server_name `you_domain.com`; 
                 index index.html;
@@ -63,6 +63,20 @@
                     proxy_set_header X-Real-IP $remote_addr;
                     proxy_pass http://localhost:3000;
                 }
+            }
+
+            server {
+                    listen 80;
+                    listen [::]:80;
+
+                    root /var/www/your_domain/html;
+                    index index.html index.htm index.nginx-debian.html;
+
+                    server_name your_domain www.your_domain;
+
+                    location / {
+                            try_files $uri $uri/ =404;
+                    }
             }
         -   server_name `you_domain.com`;  domain cần chạy website
         -   proxy_pass http://localhost:3000;  port dự án lúc start 
